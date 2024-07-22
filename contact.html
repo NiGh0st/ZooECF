@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Milky - Dairy Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-1 px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img src="img/logo-arcadia.png" alt="Logo" class="m-0" style="height: 100px;">
+        </a>
+        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Accueil</a>
+                <a href="services.html" class="nav-item nav-link">Services</a>
+                <a href="habitats.html" class="nav-item nav-link">Habitats</a>
+                <a href="avis.html" class="nav-item nav-link">Avis</a>
+                <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                <button type="button" class="connexion tn btn-padding-y-2 rounded-pill" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    <i class="fas fa-sign-in-alt"></i> Connexion
+                </button> 
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Login Modal Start -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Connexion</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Nom d'utilisateur</label>
+                            <input type="text" class="form-control" id="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Mot de passe</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Se connecter</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Modal End -->
+
+
+    <!--Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-3 text-white mb-4 animated slideInDown">Contact et Informations</h1>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h3 class="mb-4">Nous écrire</h3>
+                    <p class="mb-4">Vous pouvez nous écrire en remplissant le formulaire ci-dessous et en précisant la nature de votre demande. Nous vous répondrons dès que possible.</p>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <label for="name">Votre nom</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <label for="email">Votre e-mail</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <label for="subject">Sujet</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 250px"></textarea>
+                                    <label for="message">Votre message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-secondary rounded-pill py-3 px-5" type="submit">Envoyer votre message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <h3 class="mb-">Le Mot du Directeur</h3>
+                    <section class="welcome-section container my-1 p-1">
+                        <p class="welcome-text">
+                            "Nichée en Bretagne, près de la mystérieuse forêt de Brocéliande, Arcadia vous invite à découvrir un monde fascinant depuis 1960. Plus qu'un simple zoo, nous sommes un sanctuaire où chaque détail est conçu pour le bien-être de nos animaux et la satisfaction de nos visiteurs.
+                        </p>
+                        <p class="welcome-text">
+                            Explorez nos habitats diversifiés : la vaste savane, la jungle dense, et nos marais envoûtants où la faune aquatique s’épanouit.
+                        </p>
+                        <p class="welcome-text">
+                            Notre priorité est le bien-être animal. Chaque jour, nos vétérinaires veillent à la santé et à l’alimentation de nos résidents pour garantir leur vitalité.
+                        </p>
+                        <p class="welcome-text">
+                            Nous sommes fiers de notre succès et de notre engagement envers des standards élevés. Venez vivre une aventure inoubliable au Zoo Arcadia, où chaque visite est une découverte enchantée.
+                        </p>
+                        <p class="welcome-text text-right">
+                            À très bientôt !"
+                        </p>
+                        <p class="welcome-text text-right text-end">
+                            José<br>
+                            Directeur du Zoo Arcadia
+                        </p>
+                    </section>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <h3 class="mb-4">Informations utiles</h3>
+                    <div class="d-flex border-bottom pb-3 mb-3">
+                        <div class="flex-shrink-0 btn-square bg-secondary rounded-circle">
+                            <i class="fa fa-map-marker-alt text-body"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h6>Adresse</h6>
+                            <span>ZooParc d'ARCADIA, 35380 Paimpont, France</span>
+                        </div>
+                    </div>
+                    <div class="d-flex border-bottom pb-3 mb-3">
+                        <div class="flex-shrink-0 btn-square bg-secondary rounded-circle">
+                            <i class="fa fa-phone-alt text-body"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h6>Appelez-nous</h6>
+                            <span>+33 1 02 03 04 05
+                            <br>Du lundi au vendredi de 9h à 20h
+                            <br>Le samedi de 9h à 19h
+                            <br>Le dimanche et jours fériés 9h-17h</span>
+                        </div>
+                    </div>
+                    <div class="d-flex border-bottom-0 pb-3 mb-3">
+                        <div class="flex-shrink-0 btn-square bg-secondary rounded-circle">
+                            <i class="fa fa-envelope text-body"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h6>Notre e-mail</h6>
+                            <span>info@ZooArcadia.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <iframe class="w-100 rounded"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20740.50119450534!2d-2.200654514978958!3d48.02278170801604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480faceab3587495%3A0xcdc883e818be2eb2!2sLa%20for%C3%AAt%20de%20Broc%C3%A9liande!5e0!3m2!1sfr!2sfr!4v1721408856077!5m2!1sfr!2sfr"
+                    frameborder="0" style="min-height: 400px; border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-3">
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-6">
+                    <h5 class="text-white mb-4">Accès</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>ZooParc d'ARCADIA, 35380 Paimpont, France</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+33 1 02 03 04 05</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@ZooArcadia.com</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="bi bi-twitter"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="bi bi-facebook"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="bi bi-instagram"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Liens rapides</h5>
+                    <a class="btn btn-link" href="">Services</a>
+                    <a class="btn btn-link" href="">Habitats</a>
+                    <a class="btn btn-link" href="">Gallerie</a>
+                    <a class="btn btn-link" href="">Avis</a>
+                    <a class="btn btn-link" href="">Contact</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Horaires</h5>
+                    <p class="mb-1">Lundi - Dimanche</p>
+                    <h6 class="text-light">09h00 - 21h00</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-secondary text-body copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-semi-bold" href="#">Your Site Name</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

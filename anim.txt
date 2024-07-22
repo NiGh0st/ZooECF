@@ -1,0 +1,424 @@
+Carte habitats Liste Animaux
+Carte animaux Info Modal
+
+Avis
+Connexion
+Menu admin
+Menu employé
+Menu vétérinaire
+
+Alligator Américain
+Antilope
+Buffle
+Caméléon
+Crocodile du Nil
+Cygne Trompette
+Éléphant d'Afrique
+Girafe
+Gorille
+Gnou
+Guépard
+Hyène tachetée
+Héron Cendré
+Ibis Rouge
+Jaguar
+Loutre de rivière
+Moufette
+Orang-outan
+Panthère des neiges
+Pangolin
+Perroquet Ara
+Rat Musqué
+Rhinocéros blanc
+Serpent Boa constrictor
+Singe Capucin
+Tigre
+Tortue Cistude
+Zèbre
+Grenouille Taureau
+
+
+Antilope Impala
+Corps élancé, pattes longues et fines, pelage brun avec des marques blanches et noires, cornes en forme de lyre chez les mâles.
+Très agile et rapide, grégaire, souvent en groupes pour la sécurité.
+
+Buffles
+Corps massif, pelage noir ou brun foncé, cornes épaisses et recourbées.
+Social, souvent en grands troupeaux, connu pour sa nature défensive et protectrice envers le troupeau.
+
+Cheetah
+Corps mince et long, pelage jaune pâle avec des taches noires, lignes noires distinctives sur le visage.
+Solitaire, incroyablement rapide, chasse principalement pendant la journée.
+
+Elephant
+Grand corps, peau épaisse et grise, longues défenses en ivoire, grandes oreilles en forme d'éventail.
+Très intelligent et sociable, fort sens de la famille et de la communauté, mémoire exceptionnelle.
+
+Gazelle
+Corps gracieux, pattes longues et fines, pelage beige avec des marques blanches, cornes fines et annelées.
+Agile et rapide, vive et alerte, se déplace souvent en groupes.
+
+Girafe
+Corps très haut, cou extrêmement long, pelage jaune avec des taches marron, longues jambes fines.
+Paisible et sociable, souvent vue en petits groupes, curieuse.
+
+Hyène
+Corps robuste, pelage tacheté, épaules surélevées, mâchoire puissante.
+Opportuniste, social dans des clans matriarcaux, comportement de chasse en groupe.
+
+Lion
+Corps musclé, pelage jaune doré, crinière épaisse chez les mâles, queue avec une touffe noire.
+Social, vit en groupes appelés fiertés, territorial, chasseur efficace.
+
+Rhinocéros
+Corps massif, peau épaisse et grisâtre, une ou deux cornes sur le museau, peau plissée.
+Solitaire, territorial, peut être agressif si menacé.
+
+Zèbre
+Corps moyen, pelage rayé noir et blanc, crinière courte et dressée, pattes robustes.
+Social, vit en troupeaux, vigilant et rapide à fuir les prédateurs.
+
+Boa constrictor
+Long serpent musclé, peau avec des motifs de taches marron et beige, tête triangulaire.
+Solitaire, discret, chasse en embuscade.
+
+Capucin
+Petit singe, pelage marron clair à foncé, visage expressif, queue préhensile.
+Intelligent et curieux, social, vit en groupes, joueur.
+
+Chimpanzé
+Grand singe, pelage noir ou brun foncé, bras longs, visage sans poils.
+Très intelligent, social, vit en groupes hiérarchisés, utilise des outils.
+
+Jaguar
+Corps musclé, pelage jaune doré avec des rosettes noires, tête large.
+Solitaire, excellent chasseur, territorial.
+
+Léopard
+Corps élancé, pelage jaune doré avec des rosettes noires, tête relativement petite.
+Solitaire, nocturne, agile grimpeur.
+
+Orang-outan
+Grand singe, pelage rougeâtre, bras très longs, visage large.
+Solitaire, intelligent, passe beaucoup de temps dans les arbres.
+
+Perroquet Ara
+Grand oiseau, plumes colorées vives (rouge, bleu, jaune), bec crochu.
+Intelligent, social, vocal, souvent en couples ou petits groupes.
+
+Python réticulé
+Très long serpent, peau avec des motifs réticulés de jaune et marron, tête triangulaire.
+Solitaire, discret, chasse en embuscade.
+
+Tigre du Bengale
+Grand félin, pelage orange avec des rayures noires, corps musclé, tête large.
+Solitaire, territorial, excellent chasseur, principalement nocturne.
+
+Toucan
+Oiseau moyen, grand bec coloré, plumes noires avec une tache blanche, poitrine jaune.
+Social, souvent en groupes, vocal, vit dans les arbres.
+
+Alligator
+Grand reptile, peau épaisse et écailleuse, museau large et arrondi, queue puissante.
+Territorial, solitaire ou en petits groupes, souvent immobile pour embuscades.
+
+Bécassine
+Petit oiseau, long bec fin, plumes marron et beige, ailes longues.
+Discret, solitaire ou en petits groupes, habile à se cacher.
+
+Crabe des mangroves
+Petit crustacé, carapace dure, pinces asymétriques, couleur brune à rouge.
+Actif, social, creuse des terriers et se déplace rapidement sur la boue.
+
+Héron
+Grand oiseau échassier, long cou et longues pattes, plumes grises ou blanches, bec long et pointu.
+Solitaire, patient, souvent immobile en chasse, territorial.
+
+Hippopotame
+Corps massif, peau épaisse et grise, grandes narines, bouche large avec des canines proéminentes.
+Territorial, agressif si menacé, passe beaucoup de temps dans l'eau.
+
+Ibis
+Oiseau de taille moyenne, long bec incurvé, plumes blanches ou colorées, longues pattes.
+Social, souvent en groupes, actif dans les marais à la recherche de nourriture.
+
+Loutre de rivière
+Corps allongé, pelage brun épais, queue musclée, pattes palmées.
+Joueur, social, vit en petits groupes familiaux, excellent nageur.
+
+Sarcelle d'hiver
+Petit canard, plumage coloré, bec court, ailes larges.
+Social, souvent en groupes, migre en grandes distances, actif dans les zones humides.
+
+Tortue cistude
+Petite à moyenne tortue, carapace bombée, peau écailleuse, couleur marron ou verte.
+Solitaire, discret, passe beaucoup de temps dans l'eau ou cachée dans la végétation.
+
+Vison d'Amérique
+Petit mammifère, pelage brun foncé, corps allongé, pattes courtes.
+Solitaire, territorial, excellent nageur et chasseur.
+
+
+Alligator
+Grand reptile, peau épaisse et écailleuse, museau large et arrondi, queue puissante.
+Territorial, solitaire ou en petits groupes, souvent immobile pour embuscades.
+
+Antilope Impala
+Corps élancé, pattes longues et fines, pelage brun avec des marques blanches et noires, cornes en forme de lyre chez les mâles.
+Très agile et rapide, grégaire, souvent en groupes pour la sécurité.
+
+Bécassine
+Petit oiseau, long bec fin, plumes marron et beige, ailes longues.
+Discret, solitaire ou en petits groupes, habile à se cacher.
+
+Boa constrictor
+Long serpent musclé, peau avec des motifs de taches marron et beige, tête triangulaire.
+Solitaire, discret, chasse en embuscade.
+
+Buffles
+Corps massif, pelage noir ou brun foncé, cornes épaisses et recourbées.
+Social, souvent en grands troupeaux, connu pour sa nature défensive et protectrice envers le troupeau.
+
+Cheetah
+Corps mince et long, pelage jaune pâle avec des taches noires, lignes noires distinctives sur le visage.
+Solitaire, incroyablement rapide, chasse principalement pendant la journée.
+
+Chimpanzé
+Grand singe, pelage noir ou brun foncé, bras longs, visage sans poils.
+Très intelligent, social, vit en groupes hiérarchisés, utilise des outils.
+
+Capucin
+Petit singe, pelage marron clair à foncé, visage expressif, queue préhensile.
+Intelligent et curieux, social, vit en groupes, joueur.
+
+Crabe des mangroves
+Petit crustacé, carapace dure, pinces asymétriques, couleur brune à rouge.
+Actif, social, creuse des terriers et se déplace rapidement sur la boue.
+
+Elephant
+Grand corps, peau épaisse et grise, longues défenses en ivoire, grandes oreilles en forme d'éventail.
+Très intelligent et sociable, fort sens de la famille et de la communauté, mémoire exceptionnelle.
+
+Gazelle
+Corps gracieux, pattes longues et fines, pelage beige avec des marques blanches, cornes fines et annelées.
+Agile et rapide, vive et alerte, se déplace souvent en groupes.
+
+Girafe
+Corps très haut, cou extrêmement long, pelage jaune avec des taches marron, longues jambes fines.
+Paisible et sociable, souvent vue en petits groupes, curieuse.
+
+Hyène
+Corps robuste, pelage tacheté, épaules surélevées, mâchoire puissante.
+Opportuniste, social dans des clans matriarcaux, comportement de chasse en groupe.
+
+Héron
+Grand oiseau échassier, long cou et longues pattes, plumes grises ou blanches, bec long et pointu.
+Solitaire, patient, souvent immobile en chasse, territorial.
+
+Hippopotame
+Corps massif, peau épaisse et grise, grandes narines, bouche large avec des canines proéminentes.
+Territorial, agressif si menacé, passe beaucoup de temps dans l'eau.
+
+Ibis
+Oiseau de taille moyenne, long bec incurvé, plumes blanches ou colorées, longues pattes.
+Social, souvent en groupes, actif dans les marais à la recherche de nourriture.
+
+Jaguar
+Corps musclé, pelage jaune doré avec des rosettes noires, tête large.
+Solitaire, excellent chasseur, territorial.
+
+Léopard
+Corps élancé, pelage jaune doré avec des rosettes noires, tête relativement petite.
+Solitaire, nocturne, agile grimpeur.
+
+Lion
+Corps musclé, pelage jaune doré, crinière épaisse chez les mâles, queue avec une touffe noire.
+Social, vit en groupes appelés fiertés, territorial, chasseur efficace.
+
+Loutre de rivière
+Corps allongé, pelage brun épais, queue musclée, pattes palmées.
+Joueur, social, vit en petits groupes familiaux, excellent nageur.
+
+Orang-outan
+Grand singe, pelage rougeâtre, bras très longs, visage large.
+Solitaire, intelligent, passe beaucoup de temps dans les arbres.
+
+Perroquet Ara
+Grand oiseau, plumes colorées vives (rouge, bleu, jaune), bec crochu.
+Intelligent, social, vocal, souvent en couples ou petits groupes.
+
+Python réticulé
+Très long serpent, peau avec des motifs réticulés de jaune et marron, tête triangulaire.
+Solitaire, discret, chasse en embuscade.
+
+Rhinocéros
+Corps massif, peau épaisse et grisâtre, une ou deux cornes sur le museau, peau plissée.
+Solitaire, territorial, peut être agressif si menacé.
+
+Sarcelle d'hiver
+Petit canard, plumage coloré, bec court, ailes larges.
+Social, souvent en groupes, migre en grandes distances, actif dans les zones humides.
+
+Tigre du Bengale
+Grand félin, pelage orange avec des rayures noires, corps musclé, tête large.
+Solitaire, territorial, excellent chasseur, principalement nocturne.
+
+Toucan
+Oiseau moyen, grand bec coloré, plumes noires avec une tache blanche, poitrine jaune.
+Social, souvent en groupes, vocal, vit dans les arbres.
+
+Tortue cistude
+Petite à moyenne tortue, carapace bombée, peau écailleuse, couleur marron ou verte.
+Solitaire, discret, passe beaucoup de temps dans l'eau ou cachée dans la végétation.
+
+Vison d'Amérique
+Petit mammifère, pelage brun foncé, corps allongé, pattes courtes.
+Solitaire, territorial, excellent nageur et chasseur.
+
+Zèbre
+Corps moyen, pelage rayé noir et blanc, crinière courte et dressée, pattes robustes.
+Social, vit en troupeaux, vigilant et rapide à fuir les prédateurs.
+
+<div class="animal-card" data-habitat="Savane" data-name="Antilope" data-race="Aepyceros melampus" data-description="Corps élancé avec un pelage brun et des cornes en lyre. Agile et rapide, vit en troupeaux." data-alimentation="Herbivore" data-etat="" data-passage="" onclick="openModal(this)">
+<div class="service-card d-flex justify-content-center align-items-center h-100">
+<div class="service-img">
+<img class="img-fluid" src="img/animal/antilope.jpg" alt="">
+</div>
+<div class="service-text p-5 pt-0">
+<h5 class="mb-3">Antilope</h5>
+<p class="mb-4">Antilope élancée avec un pelage brun, connue pour son agilité et sa vie en troupeau.</p>
+</div>
+</div>
+</div>
+
+<div class="animal-card" data-habitat="Marais" data-name="Alligator Américain" data-race="Alligator mississippiensis" data-description="Grand reptile avec une peau sombre, un long museau et une puissante mâchoire. Aquatique et souvent territorial." data-alimentation="Carnivore" data-etat="" data-passage="" onclick="openModal(this)">
+<div class="service-card d-flex justify-content-center align-items-center h-100">
+<div class="service-img">
+<img class="img-fluid" src="img/animal/alligator.jpg" alt="">
+</div>
+<div class="service-text p-5 pt-0">
+<h5 class="mb-3">Alligator Américain</h5>
+<p class="mb-4">Grand reptile aquatique avec une puissante mâchoire, souvent territorial dans les marais.</p>
+</div>
+</div>
+</div>
+
+<div class="animal-card" data-habitat="Jungle" data-name="Caméléon" data-race="Chamaeleonidae" data-description="Petit reptile avec des capacités de changement de couleur, corps allongé et queue préhensile. Discret et principalement insectivore." data-alimentation="Insectivore" data-etat="" data-passage="" onclick="openModal(this)">
+<div class="service-card d-flex justify-content-center align-items-center h-100">
+<div class="service-img">
+<img class="img-fluid" src="img/animal/cameleon.jpg" alt="">
+</div>
+<div class="service-text p-5 pt-0">
+<h5 class="mb-3">Caméléon</h5>
+<p class="mb-4">Reptile capable de changer de couleur, discret et insectivore.</p>
+</div>
+</div>
+</div>
+
+<div class="animal-card" data-habitat="Marais" data-name="Crocodile du Nil" data-race="Crocodylus niloticus" data-description="Grand reptile avec une peau rugueuse, un long museau et des dents puissantes. Carnivore, vit dans les rivières et marais." data-alimentation="Carnivore" data-etat="" data-passage="" onclick="openModal(this)">
+<div class="service-card d-flex justify-content-center align-items-center h-100">
+<div class="service-img">
+<img class="img-fluid" src="img/animal/crocodile.jpg" alt="">
+</div>
+<div class="service-text p-5 pt-0">
+<h5 class="mb-3">Crocodile du Nil</h5>
+<p class="mb-4">Reptile avec une peau rugueuse et des dents puissantes, carnivore et aquatique.</p>
+</div>
+</div>
+</div>
+
+<div class="animal-card" data-habitat="Savane" data-name="Buffle" data-race="Syncerus caffer" data-description="Animal massif avec un pelage noir ou brun foncé, cornes épaisses et recourbées. Social et souvent en troupeau." data-alimentation="Herbivore" data-etat="" data-passage="" onclick="openModal(this)">
+<div class="service-card d-flex justify-content-center align-items-center h-100">
+<div class="service-img">
+<img class="img-fluid" src="img/animal/buffle.jpg" alt="">
+</div>
+<div class="service-text p-5 pt-0">
+<h5 class="mb-3">Buffle</h5>
+<p class="mb-4">Animal massif avec des cornes épaisses, social et souvent en troupeau.</p>
+</div>
+</div>
+</div>
+
+<div class="animal-card" data-habitat="Savane" data-name="Éléphant d'Afrique" data-race="Loxodonta africana" data-description="Plus grand mammifère terrestre, avec de grandes oreilles, une longue trompe et des grandes défenses. Social et intelligent, vit en groupes familiaux." data-alimentation="Herbivore" data-etat="" data-passage="" onclick="openModal(this)">
+<div class="service-card d-flex justify-content-center align-items-center h-100">
+<div class="service-img">
+<img class="img-fluid" src="img/animal/elephant.jpg" alt="">
+</div>
+<div class="service-text p-5 pt-0">
+<h5 class="mb-3">Éléphant d'Afrique</h5>
+<p class="mb-4">Plus grand mammifère terrestre, avec de grandes oreilles et une longue trompe.</p>
+</div>
+</div>
+</div>
+
+<div class="animal-card" data-habitat="Marais" data-name="Grenouille Taureau" data-race="Rana catesbeiana" data-description="Grenouille robuste avec une peau verte ou brune, large bouche et grandes pattes postérieures. Très bruyante, principalement nocturne." data-alimentation="Carnivore" data-etat="" data-passage="" onclick="openModal(this)">
+<div class="service-card d-flex justify-content-center align-items-center h-100">
+<div class="service-img">
+<img class="img-fluid" src="img/animal/grenouille.jpg" alt="">
+</div>
+<div class="service-text p-5 pt-0">
+<h5 class="mb-3">Grenouille Taureau</h5>
+<p class="mb-4">Grenouille robuste avec une large bouche, bruyante et nocturne.</p>
+</div>
+</div>
+</div>
+
+<div class="animal-card" data-habitat="Jungle" data-name="Jaguar" data-race="Panthera onca" data-description="Grand félin avec un pelage doré marqué de rosettes noires. Solitaire et territorial, très agile dans la jungle dense." data-alimentation="Carnivore" data-etat="" data-passage="" onclick="openModal(this)">
+<div class="service-card d-flex justify-content-center align-items-center h-100">
+<div class="service-img">
+<img class="img-fluid" src="img/animal/jaguar.jpg" alt="">
+</div>
+<div class="service-text p-5 pt-0">
+<h5 class="mb-3">Jaguar</h5>
+<p class="mb-4">Félin puissant avec un pelage doré et des rosettes noires, connu pour son agilité.</p>
+</div>
+</div>
+</div>
+
+<div class="animal-card" data-habitat="Jungle" data-name="Orang-outan" data-race="Pongo pygmaeus" data-description="Grand primate avec un pelage roux, bras longs et un visage expressif. Arboricole, souvent solitaire ou en petits groupes." data-alimentation="Frugivore" data-etat="" data-passage="" onclick="openModal(this)">
+<div class="service-card d-flex justify-content-center align-items-center h-100">
+<div class="service-img">
+<img class="img-fluid" src="img/animal/orang-outan.jpg" alt="">
+</div>
+<div class="service-text p-5 pt-0">
+<h5 class="mb-3">Orang-outan</h5>
+<p class="mb-4">Primate arboricole avec un pelage roux, souvent solitaire ou en petits groupes.</p>
+</div>
+</div>
+</div>
+
+<div class="animal-card" data-habitat="Jungle" data-name="Panthère des Neiges" data-race="Panthera uncia" data-description="Félin avec un pelage gris-argenté marqué de rosettes noires, queue longue et épaisse. Discret et territorial, vit dans les montagnes." data-alimentation="Carnivore" data-etat="" data-passage="" onclick="openModal(this)">
+<div class="service-card d-flex justify-content-center align-items-center h-100">
+<div class="service-img">
+<img class="img-fluid" src="img/animal/panthere-neige.jpg" alt="">
+</div>
+<div class="service-text p-5 pt-0">
+<h5 class="mb-3">Panthère des Neiges</h5>
+<p class="mb-4">Félin avec un pelage gris marqué de rosettes noires, vivant dans les montagnes.</p>
+</div>
+</div>
+</div>
+
+<div class="animal-card" data-habitat="Jungle" data-name="Singe Capucin" data-race="Cebus capucinus" data-description="Petit primate avec un pelage brun clair, un visage expressif et une queue préhensile. Social et très intelligent, utilise des outils." data-alimentation="Omnivore" data-etat="" data-passage="" onclick="openModal(this)">
+<div class="service-card d-flex justify-content-center align-items-center h-100">
+<div class="service-img">
+<img class="img-fluid" src="img/animal/singe-capucin.jpg" alt="">
+</div>
+<div class="service-text p-5 pt-0">
+<h5 class="mb-3">Singe Capucin</h5>
+<p class="mb-4">Petit primate social avec une queue préhensile, connu pour son intelligence et ses outils.</p>
+</div>
+</div>
+</div>
+
+<div class="animal-card" data-habitat="Marais" data-name="Tortue Cistude" data-race="Emys orbicularis" data-description="Tortue aquatique avec une carapace marbrée, nageant lentement dans les marais. Discrète et souvent cachée dans l'eau." data-alimentation="Omnivore" data-etat="" data-passage="" onclick="openModal(this)">
+<div class="service-card d-flex justify-content-center align-items-center h-100">
+<div class="service-img">
+<img class="img-fluid" src="img/animal/tortue-cistude.jpg" alt="">
+</div>
+<div class="service-text p-5 pt-0">
+<h5 class="mb-3">Tortue Cistude</h5>
+<p class="mb-4">Tortue aquatique avec une carapace marbrée, souvent cachée dans les marais.</p>
+</div>
+</div>
+</div>

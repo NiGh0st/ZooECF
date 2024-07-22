@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Milky - Dairy Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-1 px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img src="img/logo-arcadia.png" alt="Logo" class="m-0" style="height: 100px;">
+        </a>
+        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Accueil</a>
+                <a href="services.html" class="nav-item nav-link">Services</a>
+                <a href="habitats.html" class="nav-item nav-link active">Habitats</a>
+                <a href="avis.html" class="nav-item nav-link">Avis</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <button type="button" class="connexion tn btn-padding-y-2 rounded-pill" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    <i class="fas fa-sign-in-alt"></i> Connexion
+                </button> 
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Login Modal Start -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Connexion</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Nom d'utilisateur</label>
+                            <input type="text" class="form-control" id="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Mot de passe</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Se connecter</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Modal End -->
+
+
+    <!--Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-3 text-white mb-4 animated slideInDown">Habitats</h1>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="mb-5">Les Royaumes de la Nature :</h1>
+            </div>
+            <div class="row gy-5 gx-4">
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid " src="img/habitats-1.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/habitats-1.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3">Savane</h5>
+                            <p class="mb-4">La savane d'Arcadia recrée les vastes plaines africaines, abritant des animaux emblématiques tels que les lions majestueux, les éléphants imposants, et les girafes élancées. Ce cadre ensoleillé et herbeux permet aux visiteurs de découvrir la faune typique de ce milieu unique.</p>
+                            <button class="btn" onclick="openListe('savaneModal')">Découvrez la liste des animaux<i class="bi bi-chevron-double-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Savane -->
+                <div id="savaneModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close text-end" onclick="closeListe('savaneModal')">&times;</span>
+                        <h2>Les animaux de la savane</h2>
+                        <p>Liste animaux Savane :
+                        <?php 
+                        $animals = ['Lion', 'Chat', 'Chien', 'Cheval', 'Tigre', 'Singe']; // Ici, nous avons un tableau de 6 animaux
+                        echo '<ul>';
+                        foreach ($animals as $animal) { // On construit une balise <li></li> par animal, qui contient son nom
+                        echo '<li>'.$animal.'</li>';
+                        }
+                        echo '</ul>';
+                        ?>
+                            <ul>
+                                <li>Lion</li>
+                                <li>Éléphant d'Afrique</li>
+                                <li>Girafe</li>
+                                <li>Zèbre</li>
+                                <li>Guépard</li>
+                                <li>Hyène tachetée</li>
+                                <li>Gnou</li>
+                                <li>Buffle africain</li>
+                                <li>Antilope Impala</li>
+                                <li>Rhinocéros blanc</li>
+                            </ul>                            
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/habitats-2.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/habitats-2.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3">Jungle</h5>
+                            <p class="mb-4">Plongez dans la jungle luxuriante d'Arcadia, où la végétation dense et les arbres géants abritent une diversité incroyable d'espèces exotiques, dont les tigres du Bengale, les singes capucins, et les perroquets colorés. Ce milieu tropical offre une expérience immersive et fascinante.</p>
+                            <button class="btn" onclick="openListe('jungleModal')">Découvrez la liste des animaux <i class="bi bi-chevron-double-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Jungle -->
+                <div id="jungleModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close text-end" onclick="closeListe('jungleModal')">&times;</span>
+                        <h2>Jungle</h2>
+                        <p>Liste animaux Jungle :
+                            <ul>
+                                <li>Tigre du Bengale</li>
+                                <li>Singe Capucin</li>
+                                <li>Perroquet Ara</li>
+                                <li>Panthère des neiges</li>
+                                <li>Pangolin</li>
+                                <li>Serpent Boa constrictor</li>
+                                <li>Grenouille Dendrobate</li>
+                                <li>Jaguar</li>
+                                <li>Orang-outan</li>
+                                <li>Caméléon</li>
+                            </ul>                            
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/habitats-3.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/habitats-3.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3">Les animaux du marais</h5>
+                            <p class="mb-4">Le marais d'Arcadia vous invite à explorer un écosystème humide et mystérieux, peuplé d'alligators, de tortues cistudes, et de loutres joueuses. Avec ses eaux stagnantes et sa végétation aquatique, cet habitat offre un aperçu captivant de la vie dans les zones marécageuses.</p>
+                            <button class="btn" onclick="openListe('maraisModal')">Découvrez la liste des animaux <i class="bi bi-chevron-double-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Marais -->
+                <div id="maraisModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close text-end" onclick="closeListe('maraisModal')">&times;</span>
+                        <h2>Marais</h2>
+                        <p>Liste animaux Marais :
+                            <ul>
+                                <li>Alligator Américain</li>
+                                <li>Crocodile du Nil</li>
+                                <li>Ibis Rouge</li>
+                                <li>Héron Cendré</li>
+                                <li>Tortue Cistude</li>
+                                <li>Loutre de rivière</li>
+                                <li>Grenouille Taureau</li>
+                                <li>Moufette</li>
+                                <li>Rat Musqué</li>
+                                <li>Cygne Trompette</li>
+                            </ul>                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Card Start -->
+    <div class="filter-container wow fadeInUp" data-wow-delay="0.1s">
+        <select id="habitat-filter" class="text-center from-select" onchange="filterAnimals()">
+            <option value="all">All Habitats</option>
+            <option value="Savane">Savane</option>
+            <option value="Jungle">Jungle</option>
+            <option value="Marais">Marais</option>
+        </select>
+    </div>
+    <div class="animals-container wow fadeInUp" data-wow-delay="0.1s">
+        <!-- Example Animal Card -->
+        <div class="animal-card" data-habitat="Marais" data-name="Alligator" data-race="Alligator Américain" data-description="Grand reptile, peau épaisse et écailleuse, museau large et arrondi, queue puissante. Territorial, solitaire ou en petits groupes, souvent immobile pour embuscades." data-alimentation="Carnivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/alligator.jpg" alt="Alligator Américain">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/alligator.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Alligator Américain</h5>
+                    <p class="mb-4">Grand reptile aquatique avec une puissante mâchoire.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Savane" data-name="Antilope" data-race="Antilope" data-description="Corps élancé, pattes longues et fines, pelage brun avec des marques blanches et noires, cornes en forme de lyre chez les mâles. Très agile et rapide, grégaire, souvent en groupes pour la sécurité." data-alimentation="Herbivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/antilope.jpg" alt="Antilope">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/antilope.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Antilope</h5>
+                    <p class="mb-4">Mammifère herbivore avec des cornes courbées.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Savane" data-name="Buffle" data-race="Buffle" data-description="Corps massif, pelage noir ou brun foncé, cornes épaisses et recourbées. Social, souvent en grands troupeaux, connu pour sa nature défensive et protectrice envers le troupeau." data-alimentation="Herbivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/buffle.jpg" alt="Buffle">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/buffle.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Buffle</h5>
+                    <p class="mb-4">Grand mammifère herbivore avec des cornes épaisses.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Jungle" data-name="Caméléon" data-race="Caméléon" data-description="Petit à moyen lézard, peau qui change de couleur, corps allongé avec des pattes préhensiles, queue enroulée. Adaptable, utilise le changement de couleur pour se camoufler et communiquer, prédateur insectivore." data-alimentation="Insectivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/cameleon.jpg" alt="Caméléon">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/cameleon.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Caméléon</h5>
+                    <p class="mb-4">Petit lézard capable de changer de couleur.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Marais" data-name="Crocodile du Nil" data-race="Crocodile" data-description="Grand reptile, peau écailleuse et rugueuse, museau large et allongé, puissantes mâchoires. Territorial, carnivore, connu pour sa force et sa capacité à chasser aussi bien dans l'eau que sur terre." data-alimentation="Carnivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/crocodile.jpg" alt="Crocodile du Nil">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/crocodile.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Crocodile du Nil</h5>
+                    <p class="mb-4">Grand reptile aquatique avec une puissante mâchoire.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Marais" data-name="Cygne Trompette" data-race="Cygne" data-description="Grand oiseau aquatique, plumage blanc pur, long cou, bec noir et jaune. Social, souvent vu en groupes ou couples, connu pour son chant puissant et mélodieux, préfère les lacs et les grands plans d'eau." data-alimentation="Herbivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/cygne.jpg" alt="Cygne Trompette">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/cygne.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Cygne Trompette</h5>
+                    <p class="mb-4">Grand oiseau aquatique avec un cou long et élégant.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Savane" data-name="Éléphant d'Afrique" data-race="Éléphant" data-description="Grand corps, peau épaisse et grise, longues défenses en ivoire, grandes oreilles en forme d'éventail. Très intelligent et sociable, fort sens de la famille et de la communauté, mémoire exceptionnelle." data-alimentation="Herbivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/elephant.jpg" alt="Éléphant d'Afrique">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/alligator.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Éléphant d'Afrique</h5>
+                    <p class="mb-4">Le plus grand mammifère terrestre avec une longue trompe.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Savane" data-name="Girafe" data-race="Girafe" data-description="Corps très haut, cou extrêmement long, pelage jaune avec des taches marron, longues jambes fines. Paisible et sociable, souvent vue en petits groupes, curieuse." data-alimentation="Herbivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/girafe.jpg" alt="Girafe">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/girafe.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Girafe</h5>
+                    <p class="mb-4">Mammifère avec un long cou et des taches distinctives.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Jungle" data-name="Gorille" data-race="Gorille" data-description="Grand primate, pelage noir ou brun foncé, corps massif avec de puissants bras et une tête large. Social, vit en groupes familiaux dirigés par un mâle dominant, herbivore, intelligent et doux dans son comportement quotidien." data-alimentation="Herbivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/gorille.jpg" alt="Gorille">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/gorille.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Gorille</h5>
+                    <p class="mb-4">Grand primate avec un corps robuste et des bras puissants.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Savane" data-name="Gnou" data-race="Gnou" data-description="Corps massif, pelage brun avec des marques noires ou grisâtres, longues cornes incurvées chez les deux sexes. Social, vit en grands troupeaux, connu pour ses migrations annuelles et sa nature grégaire pour la protection contre les prédateurs." data-alimentation="Herbivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/gnou.jpg" alt="Gnou">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/gnou.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Gnou</h5>
+                    <p class="mb-4">Mammifère avec une tête massive et des cornes recourbées.</p>
+                </div>
+            </div>
+        </div>
+        <div class="animal-card" data-habitat="Jungle" data-name="Jaguar" data-race="Jaguar" data-description="Corps musclé, pelage jaune doré avec des rosettes noires, tête large. Solitaire, excellent chasseur, territorial." data-alimentation="Carnivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/jaguar.jpg" alt="Jaguar">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/jaguar.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Jaguar</h5>
+                    <p class="mb-4">Grand félin avec des taches noires sur un pelage doré.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Savane" data-name="Guépard" data-race="Guépard" data-description="Corps mince et long, pelage jaune pâle avec des taches noires, lignes noires distinctives sur le visage. Solitaire, incroyablement rapide, chasse principalement pendant la journée." data-alimentation="Carnivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/guepard.jpg" alt="Guépard">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/guepard.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Guépard</h5>
+                    <p class="mb-4">Félin rapide avec un pelage tacheté.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="animal-card" data-habitat="Marais" data-name="Grenouille Taureau" data-race="Grenouille" data-description="Grande grenouille, peau verte ou brune avec des marques plus sombres, corps robuste et yeux proéminents. Actif principalement la nuit, se nourrit d'insectes et de petits animaux, bon nageur." data-alimentation="Insectivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/grenouille.jpg" alt="Grenouille Taureau">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/grenouille.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Grenouille Taureau</h5>
+                    <p class="mb-4">Grande grenouille avec une couleur brun verdâtre.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Marais" data-name="Héron Cendré" data-race="Héron" data-description="Grand oiseau échassier, long cou et longues pattes, plumes grises ou blanches, bec long et pointu. Solitaire, patient, souvent immobile en chasse, territorial." data-alimentation="Carnivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/heron.jpg" alt="Héron Cendré">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/heron.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Héron Cendré</h5>
+                    <p class="mb-4">Grand oiseau avec un long cou et des pattes.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Savane" data-name="Hyène tachetée" data-race="Hyène" data-description="Corps robuste, pelage tacheté, épaules surélevées, mâchoire puissante. Opportuniste, social dans des clans matriarcaux, comportement de chasse en groupe." data-alimentation="Carnivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/hyene.jpg" alt="Hyène tachetée">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/hyene.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Hyène tachetée</h5>
+                    <p class="mb-4">Carnivore avec un pelage tacheté.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Marais" data-name="Ibis Rouge" data-race="Ibis" data-description="Oiseau de taille moyenne, long bec incurvé, plumes blanches ou colorées, longues pattes. Social, souvent en groupes, actif dans les marais à la recherche de nourriture." data-alimentation="Omnivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/ibis.jpg" alt="Ibis Rouge">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/ibis.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Ibis Rouge</h5>
+                    <p class="mb-4">Oiseau au plumage rouge vif.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Savane" data-name="Lion" data-race="Lion" data-description="Corps musclé, pelage jaune doré, crinière épaisse chez les mâles, queue avec une touffe noire. Social, vit en groupes appelés fiertés, territorial, chasseur efficace." data-alimentation="Carnivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/lion.jpg" alt="Lion">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/lion.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Lion</h5>
+                    <p class="mb-4">Grand félin avec une crinière distinctive chez les mâles.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="animal-card" data-habitat="Marais" data-name="Loutre de rivière" data-race="Loutre" data-description="Corps allongé, pelage brun épais, queue musclée, pattes palmées. Joueur, social, vit en petits groupes familiaux, excellent nageur." data-alimentation="Carnivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/loutre.jpg" alt="Loutre de rivière">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/loutre.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Loutre de rivière</h5>
+                    <p class="mb-4">Mammifère aquatique avec un pelage brun et des pattes palmées.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Marais" data-name="Moufette" data-race="Moufette" data-description="Petit mammifère, pelage noir avec une bande blanche distinctive courant le long du dos, queue touffue. Solitaire, utilise son jet odorant comme moyen de défense, nocturne et omnivore." data-alimentation="Omnivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/moufette.jpg" alt="Moufette">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/moufette.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Moufette</h5>
+                    <p class="mb-4">Petit mammifère avec un pelage rayé distinctif.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Jungle" data-name="Orang-outan" data-race="Orang-outan" data-description="Grand singe, pelage rougeâtre, bras très longs, visage large. Solitaire, intelligent, passe beaucoup de temps dans les arbres." data-alimentation="Herbivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/orang-outan.jpg" alt="Orang-outan">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/orang-outan.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Orang-outan</h5>
+                    <p class="mb-4">Grand primate avec un pelage roux.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Jungle" data-name="Panthère des neiges" data-race="Panthère" data-description="Corps musclé, pelage jaune doré avec des rosettes noires, tête large et puissante. Solitaire, vit dans les forêts denses de l'Asie du Sud-Est, excellent grimpeur et chasseur nocturne, adaptable aux environnements variés." data-alimentation="Carnivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/panthere.jpg" alt="Panthère des neiges">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/pangolin.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Panthère des neiges</h5>
+                    <p class="mb-4">Félin avec un pelage blanc et noir.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Jungle" data-name="Pangolin" data-race="Pangolin" data-description="Corps allongé, couvert d'écailles kératinisées dures, peau brunâtre à grise. Solitaire, principalement nocturne, se nourrit d'insectes comme les fourmis et les termites, utilise ses écailles pour se protéger des prédateurs." data-alimentation="Insectivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/pangolin.jpg" alt="Pangolin">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/pangolin.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Pangolin</h5>
+                    <p class="mb-4">Mammifère nocturne avec des écailles protectrices.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Jungle" data-name="Perroquet Ara" data-race="Ara" data-description="Grand oiseau, plumes colorées vives (rouge, bleu, jaune), bec crochu. Intelligent, social, vocal, souvent en couples ou petits groupes." data-alimentation="Frugivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/perroquet.jpg" alt="Perroquet Ara">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/perroquet.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Perroquet Ara</h5>
+                    <p class="mb-4">Grand oiseau coloré avec un plumage vert, bleu et rouge.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Marais" data-name="Rat Musqué" data-race="Rat Musqué" data-description="Corps allongé, pelage brun ou grisâtre, queue longue et effilée, pattes courtes avec des doigts palmés. Semi-aquatique, excellent nageur, se nourrit de végétation aquatique, souvent trouvé près des marais et des étangs." data-alimentation="Omnivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/rat-musque.jpg" alt="Rat Musqué">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/rat-musque.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Rat Musqué</h5>
+                    <p class="mb-4">Rongeur semi-aquatique avec un pelage brun foncé.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Savane" data-name="Rhinocéros blanc" data-race="Rhinocéros" data-description="Corps massif, peau épaisse et grise, large bouche en forme de cuillère, une ou deux cornes sur le museau. Herbivore, se nourrit principalement d'herbes, souvent trouvé dans les savanes et les prairies." data-alimentation="Herbivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/rhinoceros.jpg" alt="Rhinocéros blanc">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/rhinoceros.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Rhinocéros blanc</h5>
+                    <p class="mb-4">Grand mammifère herbivore avec une peau épaisse et deux cornes.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Jungle" data-name="Serpent Boa constrictor" data-race="Boa constrictor" data-description="Long serpent musclé, peau avec des motifs de taches marron et beige, tête triangulaire Solitaire, discret, chasse en embuscade." data-alimentation="Carnivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/boa.jpg" alt="Serpent Boa constrictor">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/boa.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Serpent Boa constrictor</h5>
+                    <p class="mb-4">Grand serpent non venimeux avec un pelage tacheté.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Jungle" data-name="Singe Capucin" data-race="Singe Capucin" data-description="Petit singe, pelage marron clair à foncé, visage expressif, queue préhensile. Intelligent et curieux, social, vit en groupes, joueur." data-alimentation="Omnivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/capucin.jpg" alt="Singe Capucin">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/capucin.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Singe Capucin</h5>
+                    <p class="mb-4">Petit primate avec un pelage brun clair.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Jungle" data-name="Tigre" data-race="Tigre du Bangale" data-description="Grand félin, pelage orange avec des rayures noires, corps musclé, tête large. Solitaire, territorial, excellent chasseur, principalement nocturne." data-alimentation="Carnivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/tigre.jpg" alt="Tigre">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/tigre.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Tigre</h5>
+                    <p class="mb-4">Grand félin avec des rayures orange et noires.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Marais" data-name="Tortue Cistude" data-race="Cistude" data-description="Petite à moyenne tortue, carapace bombée, peau écailleuse, couleur marron ou verte. Solitaire, discret, passe beaucoup de temps dans l'eau ou cachée dans la végétation." data-alimentation="Omnivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/tortue.jpg" alt="Tortue Cistude">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/tortue.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Tortue Cistude</h5>
+                    <p class="mb-4">Tortue aquatique avec une carapace en forme d'olive.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animal-card" data-habitat="Savane" data-name="Zèbre" data-race="Zèbre" data-description="Corps moyen, pelage rayé noir et blanc, crinière courte et dressée, pattes robustes. Social, vit en troupeaux, vigilant et rapide à fuir les prédateurs." data-alimentation="Herbivore" data-etat="" data-passage="" onclick="openModal(this)">
+            <div class="service-card d-flex justify-content-center align-items-center h-100">
+                <div class="service-img">
+                    <img class="img-fluid" src="img/animal/zebre.jpg" alt="Zèbre">
+                </div>
+                <div class="service-text p-5 pt-0">
+                    <div class="opacity-icon text-center">
+                        <img class="img-fluid" src="img/animal/zebre.jpg" alt="">
+                    </div>
+                    <h5 class="mb-3">Zèbre</h5>
+                    <p class="mb-4">Mammifère herbivore avec un pelage rayé noir et blanc.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="animalModal" class="modal">
+        <div class="modal-content">
+            <span class="close text-end" onclick="closeModal()">&times;</span>
+            <h2 id="modal-name">Nom de l'animal</h2>
+            <p><strong>Habitat :</strong> <span id="modal-habitat"></span></p>
+            <p><strong>Race :</strong> <span id="modal-race"></span></p>
+            <p><strong>Description :</strong> <span id="modal-description"></span></p>
+            <p><strong>Alimentation :</strong> <span id="modal-alimentation"></span></p>
+            <p><strong>Etat de l'animal :</strong> <span id="modal-etat"></span></p>
+            <p><strong>Dernier passage du vétérinaire :</strong> <span id="modal-passage"></span></p>
+        </div>
+    </div>
+    <!-- Card End -->
+
+    
+    <!-- Footer Start -->
+    <div class="container-fluid footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-3">
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-6">
+                    <h5 class="text-white mb-4">Accès</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>ZooParc d'ARCADIA, 35380 Paimpont, France</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+33 1 02 03 04 05</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@ZooArcadia.com</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="bi bi-twitter"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="bi bi-facebook"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="bi bi-instagram"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Liens rapides</h5>
+                    <a class="btn btn-link" href="">Services</a>
+                    <a class="btn btn-link" href="">Habitats</a>
+                    <a class="btn btn-link" href="">Gallerie</a>
+                    <a class="btn btn-link" href="">Avis</a>
+                    <a class="btn btn-link" href="">Contact</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Horaires</h5>
+                    <p class="mb-1">Lundi - Dimanche</p>
+                    <h6 class="text-light">09h00 - 21h00</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-secondary text-body copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-semi-bold" href="#">Your Site Name</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
